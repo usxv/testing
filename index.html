@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>HireMe</title>
+    
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <!-- Left Part Of Navigation Bar -->
+            <ul class="left" type="none">
+                <li><a href="http://" class="logo-main">HireMe</a></li>
+                <li><a href="http://" id="about">About Us</a></li>
+                <li><a href="http://" id="sol">Solutions</a></li>
+                <li><a href="http://" id="career">Career</a></li>
+                <li><a href="http://" id="contact">Contact Us </a></li>
+            </ul>
+            <!-- Right Part Of Navigation Bar -->
+            <ul class="right" type="none">
+                <li><button type="button" id="app-btn">Hireme App</button></li>
+            </ul>
+            <button id="menu-btn" onclick="navbarExpand()"><img src="./resources/menu.svg" alt=""></button>
+
+        </div>
+        <!-- End of Navigation Bar-->
+        <div id="expand-navbar">
+            <ul class="expanded" type="none">
+                <li><a href="http://" id="about2">About Us</a></li>
+                <li><a href="http://" id="sol2">Solutions</a></li>
+                <li><a href="http://" id="career2">Career</a></li>
+                <li><a href="http://" id="contact2">Contact Us </a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="main-heading">Empowering Success, Connecting <span class="tweak">Talents.</span></h1>
+            <div class="element1">
+                <div class="part1">
+                    <div class="div">
+                        <h1 class="cards-heading">200</h1>
+                        <p>Business Client Solutions</p>
+                    </div>
+                    <div class="div">
+                        <h1 class="cards-heading">5000+</h1>
+                        <p>Mentorship Provided</p>
+                    </div>
+                    <div class="div">
+                        <h1 class="cards-heading">2020</h1>
+                        <p>Founded in March</p>
+                    </div>
+                    <div class="div">
+                        <h1 class="cards-heading">20+</h1>
+                        <p>Clients Served</p>
+
+                    </div>
+                </div>
+                <div class="part2">
+                    <h1>Introducing <span class="tweak">HireMe</span> <span class="tweak2"> "Your Path To Professional
+                            Excellence"</span></h1>
+                    <p>Welcome to Hiremi, your partner in success! We redefine success through innovative business
+                        solutions, career path mentorship, and cutting-edge corporate training programs. Tailored to
+                        meet your unique challenges, our strategic insights drive sustainable growth. Whether you're a
+                        startup or an established enterprise, we guide you at every step. Our career path mentorship
+                        inspires professionals, fostering skills for new heights. Elevate your team with our corporate
+                        training, from leadership to technical proficiency. Choose Hiremi for excellence – your success
+                        story begins with us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function navbarExpand() {
+        const x = document.getElementById('expand-navbar');
+        const body = document.querySelector('body');
+        x.classList.toggle('show');
+        body.classList.toggle('expand-scroll');
+    }
+
+
+</script>
+
+</html>
